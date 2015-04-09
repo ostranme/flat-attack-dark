@@ -1,0 +1,104 @@
+/*
+ * Flat Attack Dark Theme Copyright (c) 2015 Mark Ostrander.
+ * 
+ * Liscensed under MIT
+ */
+
+/* Define some variables used in multiple places */
+@background: #3A383A  ;
+@foreground: #ECF0F1;
+@white: #fff;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: none;
+    border-top: 1px solid #969C9E;
+    border-right: 1px solid #969C9E;
+    border-bottom: 1px solid #969C9E;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: none;
+        color: #5FA7CD;
+        border-top: 1px solid #969C9E;
+        border-left: 1px solid #969C9E;
+        border-bottom: 1px solid #969C9E;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;    
+    }
+}
+
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #DFD7A9 ;}
+.cm-number, .cm-attribute, .cm-plus {color: #EF5C54;}
+.cm-def, .cm-property {color: #00B16A ;}
+.cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
+.cm-comment {color: #969C9E;} 
+.cm-error, .cm-minus {color: #dc322f;}
+.cm-header {color: #5FA7CD;}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4;}
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #5FA7CD;}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #F4D03F ;
+    &.searching-current-match {
+        background-color: #f6a644;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #F62459  !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: @white;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #34495e;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: #D2D7D3;
+    color: #2574A9 !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid @white;
+}
+
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
