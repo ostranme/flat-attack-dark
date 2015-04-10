@@ -1,7 +1,6 @@
-Brackets Theme: Flat Attack Dark
-===
+#Brackets Theme: Flat Attack Dark
 
-Flat color inspired dark theme for Brackets
+Dark theme using flat colors for Brackets
 
 ### HTML
 ![HTML Screenshot](https://github.com/ostranme/flat-attack-dark/blob/master/screenshots/html.png)
