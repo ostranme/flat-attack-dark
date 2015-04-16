@@ -16,7 +16,7 @@
         "addModeClass": true
     },
     "engines": {
-        "brackets": ">=1.0.0"
+        "brackets": ">=0.42.0"
     },
     "keywords": ["theme", "brackets", "flat", "flat ui", "dark"]
 }
