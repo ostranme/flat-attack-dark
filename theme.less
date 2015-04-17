@@ -4,16 +4,15 @@
  * Liscensed under MIT
  */
 
-/* Define some variables used in multiple places */
-@background: #3A383A  ;
+@background: #3A383A;
 @foreground: #ECF0F1;
 @white: #fff;
 @black: #000;
 @gray: #969C9E;
 @string: #DFD7A9;
 @flat_red: #EF5C54;
-@error_red: #dc322f;
-@flat_green: #00B16A;
+@error: #dc322f;
+@flat_green: #2ABB9B;
 @flat_blue: #5FA7CD;
 @matching: #D2D7D3;
 @search: #F4D03F;
@@ -23,7 +22,8 @@
 
 /* Code Styling */
 
-.CodeMirror, .CodeMirror-scroll {
+.CodeMirror,
+.CodeMirror-scroll {
     background-color: @background;
     color: @foreground;
 }
@@ -52,18 +52,65 @@
     }
 }
 
-.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: @string ;}
-.cm-number, .cm-attribute, .cm-plus {color: @flat_red;}
-.cm-def, .cm-property {color: @flat_green;}
-.cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
-.cm-comment {color: @gray;} 
-.cm-error, .cm-minus {color: @error_red;}
-.cm-header {color: @flat_blue;}
-.cm-link {color: #b77fdb; text-decoration: none;}
-.cm-rangeinfo {color: #6c71c4;}
-.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: @flat_blue;}
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: @string;
+}
+
+.cm-number,
+.cm-attribute,
+.cm-plus {
+    color: @flat_red;
+}
+
+.cm-def,
+.cm-property {
+    color: @flat_green;
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @foreground;
+}
+
+.cm-comment {
+    color: @gray;
+}
+
+.cm-error,
+.cm-minus {
+    color: @error;
+}
+
+.cm-header {
+    color: @flat_blue;
+}
+
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote {
+    color: @flat_blue;
+}
 
 /* Extra CSS */
+
 .CodeMirror-searching {
     background-color: @search;
     &.searching-current-match {
@@ -87,20 +134,38 @@
 .CodeMirror .CodeMirror-selected {
     background: #333f48;
 }
+
 .CodeMirror-focused .CodeMirror-selected {
     background: #34495e;
 }
 
-.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    background-color: @matching;
-    color: @flat_blue !important;
+    
+    background-color: @white;
+    color: #34495e !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-left: none !important;
     border-bottom: 1px solid @white;
 }
+
+/* Non-editor styling */
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+/**
+ * Extensions
+ * ==========
+ */
 
 /* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)*/
 .CodeMirror .cm-dk-whitespace-space::before,
@@ -112,12 +177,38 @@
     background-color: @white_space !important;
 }
 
-/* Non-editor styling */
-.image-view,
-.not-editor {
-    background-color: @background;
+/* Code Folding (https://github.com/thehogfather/brackets-code-folding)*/
+.CodeMirror-foldgutter-open:after {
+    content: "\25BD";
+    font-size: 1.5em;
+    color: @gray;
 }
 
-.view-pane .image-view {
-    color: @foreground;
+.CodeMirror-foldgutter-folded:after {
+    content: "\25B7";
+    background-color: transparent !important;
+    font-size: 1.5em;
+    color: @search !important;
+}
+
+.CodeMirror-foldgutter-folded {
+    padding: 0;
+}
+
+.CodeMirror-foldgutter-open {
+    padding-top: 1px;
+}
+
+.CodeMirror-foldmarker {
+    display: inline-block;
+    border-radius: 0.25em;
+    padding: 0 2px;
+    border: 0px;
+    font-size: .7em;
+    color: #2C3E50 !important;
+    background-color: @foreground;
+    &::after {
+        content: '\2022\2022\2022';
+        position: relative;
+    }
 }

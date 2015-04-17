@@ -13,12 +13,20 @@ Dark theme using flat colors for Brackets
 
 ###Installation
 ---
+**This extension requires Brackets 1.0 or newer**
 
 1. Open Brackets
 2. Open the Extension Manager
 3. Switch to "Themes" tab
 4. Search for "Flat Attack Dark"
 5. Click "Install"
+
+###Extension Support
+---
+- [Show Whitespace](https://github.com/DennisKehrig/brackets-show-whitespace)
+- [Code folding](https://github.com/thehogfather/brackets-code-folding)
+
+Feel free to open and issue if you want more extension support
 
 ###License
 ---
