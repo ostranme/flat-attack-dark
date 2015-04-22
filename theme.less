@@ -137,11 +137,14 @@
     background: #34495e;
 }
 
-.CodeMirror-matchingbracket,
+.CodeMirror-matchingbracket {
+    background-color: rgba(150,156,158, 0.4);
+    color: @white !important;
+}
+
 .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    background-color: rgba(51, 110, 123, 0.5);
-    color: @white !important;
+    background-color: rgba(150,156,158, 0.4);
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {

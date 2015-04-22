@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+##1.0.5
+- [CHANGE] Update matching tag and bracket colors
+
 ##1.0.4
 - [CHANGE] Update matching tag and bracket colors
 
