@@ -13,7 +13,7 @@ Dark theme using flat colors for Brackets
 
 ###Installation
 ---
-**This extension requires Brackets 1.0 or newer**
+**This extension requires Brackets 1.0.0 or newer**
 
 1. Open Brackets
 2. Open the Extension Manager
@@ -26,7 +26,7 @@ Dark theme using flat colors for Brackets
 - [Show Whitespace](https://github.com/DennisKehrig/brackets-show-whitespace)
 - [Code folding](https://github.com/thehogfather/brackets-code-folding)
 
-Feel free to open and issue if you want more extension support
+Feel free to open an issue if you want more extension support
 
 ###License
 ---

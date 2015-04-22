@@ -31,7 +31,6 @@
 .CodeMirror-focused .CodeMirror-activeline-background {
     background: none;
     border-top: 1px solid @gray;
-    border-right: 1px solid @gray;
     border-bottom: 1px solid @gray;
 }
 
@@ -44,7 +43,6 @@
         background: none;
         color: @flat_blue;
         border-top: 1px solid @gray;
-        border-left: 1px solid @gray;
         border-bottom: 1px solid @gray;
     }
     .inline-widget .CodeMirror-gutter-elt {
@@ -142,9 +140,8 @@
 .CodeMirror-matchingbracket,
 .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    
-    background-color: @white;
-    color: #34495e !important;
+    background-color: rgba(51, 110, 123, 0.5);
+    color: @white !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
