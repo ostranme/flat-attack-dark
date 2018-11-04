@@ -1,4 +1,4 @@
-#Brackets Theme: Flat Attack Dark
+# Brackets Theme: Flat Attack Dark
 
 Dark theme using flat colors for Brackets
 
@@ -11,7 +11,7 @@ Dark theme using flat colors for Brackets
 ### JS
 ![JS Screenshot](https://github.com/ostranme/flat-attack-dark/blob/master/screenshots/js.png)
 
-###Installation
+### Installation
 ---
 **This extension requires Brackets 1.0.0 or newer**
 
@@ -21,14 +21,14 @@ Dark theme using flat colors for Brackets
 4. Search for "Flat Attack Dark"
 5. Click "Install"
 
-###Extension Support
+### Extension Support
 ---
 - [Show Whitespace](https://github.com/DennisKehrig/brackets-show-whitespace)
 - [Code folding](https://github.com/thehogfather/brackets-code-folding)
 
 Feel free to open an issue if you want more extension support
 
-###License
+### License
 ---
 
 The MIT License. Read [LICENSE](LICENSE) for further information.
